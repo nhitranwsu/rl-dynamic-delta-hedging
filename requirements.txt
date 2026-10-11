@@ -1,5 +1,5 @@
-streamlit
-torch
+streamlit>=1.50
 numpy
 scipy
 plotly
+pandas

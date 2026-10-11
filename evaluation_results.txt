@@ -1,0 +1,12 @@
+10,000 fresh paths per scenario, objective in dollars, difference is agent minus best tuned rule
+
+scenario                                     agent best rule                     rule     diff   ± se  diff %
+Short straddle, plain costs                  -1066     -1116           Threshold 5.0%       50     26    4.5%
+Short straddle, market impact                -1792     -1878                  WW x2.0       86     22    4.6%
+Short straddle, high risk aversion           -6026     -5945           Threshold 0.5%      -81     28   -1.4%
+Short straddle, wide spread                  -2242     -2304                  WW x2.0       62     31    2.7%
+Short strangle, jumps                        -9795     -9988                  WW x2.0      193     26    1.9%
+Long straddle, 2 hedges per day               1672      1663                  WW x2.0        8     11    0.5%
+Risk reversal, quiet vol                     -1124     -1133                  WW x2.0       10      8    0.8%
+Customer flow book, wide costs                -230      -214               Periodic 5      -15     10   -7.2%
+Short straddle, last 5 days to expiry         -943      -961                  WW x2.0       18     19    1.9%
