@@ -15,7 +15,7 @@ from policy import Policy, agent, features
 HERE = os.path.dirname(os.path.abspath(__file__))
 KAPPAS = [0.02, 0.05, 0.1, 0.2, 0.5, 1.0, 2.0]
 
-st.set_page_config(page_title="Delta hedging desk", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Delta hedging desk | Nhi Q Tran", layout="wide", initial_sidebar_state="expanded")
 st.markdown(ui.css(), unsafe_allow_html=True)
 
 # ----------------------------------------------------------------------------------------------- state and defaults
@@ -62,6 +62,7 @@ policy = load_policy()
 
 # ----------------------------------------------------------------------------------------------- sidebar
 with st.sidebar:
+    st.markdown(ui.author_html(), unsafe_allow_html=True)
     st.markdown('<div class="tm pt">Book</div>', unsafe_allow_html=True)
     st.selectbox("Preset", H.PRESETS, key="preset", on_change=reset_book, label_visibility="collapsed")
     if st.session_state.preset.startswith("Customer"):
@@ -441,3 +442,4 @@ def model_view():
 
 
 {"Monte Carlo": monte_carlo, "Path replay": path_replay, "Agent": agent_view, "Model": model_view}[ss.view]()
+st.markdown(ui.foot_html(), unsafe_allow_html=True)

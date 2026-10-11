@@ -81,3 +81,6 @@ Retraining needs torch (`pip install torch`), then `python train.py 3000`. A sec
 
 One underlying, constant vol with no skew dynamics, delta only hedging (the book keeps its gamma, vega and theta), simple cost
 model, and an agent that has only been tested inside the ranges of the sliders. See the Model tab.
+
+---
+Author: Nhi Q Tran. Copyright (c) 2026 Nhi Q Tran. All rights reserved. See LICENSE.
