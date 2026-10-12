@@ -19,7 +19,8 @@ FONT = "IBM Plex Sans, system-ui, -apple-system, Segoe UI, sans-serif"
 _CSS_BODY = """
 .stApp { background: var(--bg); color: var(--ink); }
 [data-testid="stHeader"] { background: transparent; }
-[data-testid="stToolbar"], [data-testid="stDecoration"], #MainMenu, footer { display: none !important; }
+[data-testid="stToolbarActions"], [data-testid="stMainMenu"], [data-testid="stAppDeployButton"], [data-testid="stStatusWidget"], [data-testid="stDecoration"], #MainMenu, footer { display: none !important; }
+[data-testid="stExpandSidebarButton"] { color: var(--ink2) !important; }
 .block-container { padding: 1.2rem 1.6rem 2.5rem; max-width: 100%; }
 [data-testid="stSidebar"] { background: var(--panel); border-right: 1px solid var(--line); }
 [data-testid="stSidebar"] label p, [data-testid="stSidebar"] .stMarkdown p { font-size: 13px; }
